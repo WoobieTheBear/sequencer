@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>bmn step sequencer</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="javascripts/soundmanager2-nodebug-jsmin.js"></script>
+  <script src="javascripts/step_sequencer_sm.js"></script>
+</head>
+<body>
+
+  <div class="row">
+    <div class="twelve columns">
+      <h4>classic step sequencer</h4>
+      <hr />
+      <table>
+        <tr>
+          <td>
+            <div type="button" id="start" class="seqControl start"></div>
+            <div type="button" id="stop" class="seqControl stop" /></div>
+          </td>
+        </tr>
+        <tr>
+          <td width="110">
+            <label>Tempo</label>
+            <input type="number" id="myTempo" name="myTempo"></input>
+            <label>Shuffle (1&ndash;50)</label>
+            <input type="number" id="myShuffle" name="myShuffle"></input>
+          </td>
+          <td width="110">
+            <label>Pattern</label>
+            <select id="pattern" name="pattern">
+              <option>Rap</option>
+              <option>Electro</option>
+              <option>Big Beat</option>
+            </select>
+            <label style="margin-top:8px;">Set</label>
+            <select id="set" name="set">
+              <option>Synth</option>
+              <option>Human</option>
+              <option>Akai</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns">
+      <form id="seqForm" name="seqForm" class="custom">
+        <table id="sequencer">
+        </table>
+      </form>
+    </div>
+  </div>
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  <script src="javascripts/jquery.event.move.js"></script>
+  <script src="javascripts/jquery.event.swipe.js"></script>
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/jquery.foundation.buttons.js"></script>
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
+  <script src="javascripts/jquery.foundation.accordion.js"></script>
+  <script src="javascripts/jquery.placeholder.js"></script>
+  <script src="javascripts/jquery.foundation.alerts.js"></script>
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+    </script> 
+  
+</body>
+</html>
