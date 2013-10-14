@@ -1,30 +1,4 @@
 /* Requires: normalize.css */
-.seqControl{
-  width: 24px;
-  height: 24px;
-  float: left;
-  border: solid #dcdcdc 1px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.start{
-  background:#efefef url('../images/start.gif') no-repeat center center;
-  background-size: 24px 24px;
-  margin-right: 4px;
-}
-
-.stop{
-  background:#efefef url('../images/stop.gif') no-repeat center center;
-  background-size: 24px 24px;
-}
-
-.playing{
-  background-color:#abefab;
-}
 
 /* Global Reset & Standards ---------------------- */
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }

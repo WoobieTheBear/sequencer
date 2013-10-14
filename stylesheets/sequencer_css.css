@@ -1,0 +1,105 @@
+.seqControl{
+  width: 48px;
+  height: 48px;
+  float: left;
+  border: solid #dcdcdc 1px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.start, .stop, .save, .delete {
+  background-size: 32px 32px;
+  margin: 6px 6px 8px 6px;  
+}
+
+.seqControl:hover{
+  cursor: pointer;
+}
+
+.start{
+  background:#efefef url('../images/start.gif') no-repeat center center;
+}
+
+.stop{
+  background:#efefef url('../images/stop.gif') no-repeat center center;
+}
+
+.save{
+  background:#efefef url('../images/save.gif') no-repeat center center;
+}
+
+.delete{
+  background:#efefef url('../images/delete.gif') no-repeat center center;
+}
+
+.playing{
+  background-color:#abefab;
+}
+
+.seqRow{
+  width: 100%;
+  height: 33px;
+}
+
+.seqDiv, .labelDiv, .posDiv{
+  float: left;
+  font-size: 18px;
+  height: 34px;
+  line-height: 32px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+.seqDiv, .posDiv{
+  width: 5%;
+  text-align: center;
+}
+
+.on, .off {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.on{
+  background-color: #777;
+  color: #fefefe;
+}
+
+.off{
+  background-color: #efefef;
+  color: #333;
+}
+
+.seqDiv{
+  border: 1px solid #cfcfcf;
+}
+
+.posDiv{
+  border: 1px solid rgba(255, 255, 255, 0.0);
+}
+
+.labelDiv{
+  width: 20%;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+@media only screen and (max-width: 767px) {
+.labelDiv{
+  float: none;
+  width: 100%;
+  border-bottom: none;
+}
+.seqRow{
+  width: 100%;
+  height: 99px;
+}
+
+.seqDiv, .posDiv{
+  width: 12.6%;
+}
+
+}

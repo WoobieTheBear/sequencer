@@ -18,11 +18,12 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/sequencer_css.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
   <script src="javascripts/soundmanager2-nodebug-jsmin.js"></script>
-  <script src="javascripts/step_sequencer_sm.js"></script>
+  <script src="javascripts/step_sequencer_Arrtest.js"></script>
 </head>
 <body>
 
@@ -30,28 +31,46 @@
     <div class="twelve columns">
       <h4>classic step sequencer</h4>
       <hr />
+    </div>
+    <div class="four columns">
       <table>
         <tr>
-          <td>
+          <td colspan="2">
             <div type="button" id="start" class="seqControl start"></div>
             <div type="button" id="stop" class="seqControl stop" /></div>
+            <div type="button" id="save" class="seqControl save" /></div>
+            <div type="button" id="delete" class="seqControl delete" /></div>
           </td>
         </tr>
+      </table>
+    </div>
+    <div class="four columns">
+      <table>
         <tr>
           <td width="110">
             <label>Tempo</label>
             <input type="number" id="myTempo" name="myTempo"></input>
-            <label>Shuffle (1&ndash;50)</label>
+          </td>
+          <td>
+            <label>Swing (1&ndash;50)</label>
             <input type="number" id="myShuffle" name="myShuffle"></input>
           </td>
-          <td width="110">
+        </tr>
+      </table>
+    </div>
+    <div class="four columns">
+      <table>
+        <tr>
+          <td>
             <label>Pattern</label>
             <select id="pattern" name="pattern">
               <option>Rap</option>
               <option>Electro</option>
               <option>Big Beat</option>
             </select>
-            <label style="margin-top:8px;">Set</label>
+          </td>
+          <td width="110">
+            <label>Set</label>
             <select id="set" name="set">
               <option>Synth</option>
               <option>Human</option>
@@ -65,10 +84,9 @@
 
   <div class="row">
     <div class="twelve columns">
-      <form id="seqForm" name="seqForm" class="custom">
-        <table id="sequencer">
-        </table>
-      </form>
+      <div id="sequencer">
+
+      </div>
     </div>
   </div>
   
